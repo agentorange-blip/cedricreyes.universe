@@ -270,12 +270,15 @@ button {
     position: relative;
     z-index: 2;
 }
-
 .eyebrow,
 .section-kicker {
     font-size: 10px;
     letter-spacing: 0.26em;
     font-weight: 800;
+}
+
+.section-kicker {
+    margin-bottom: 30px;
 }
 
 .eyebrow {
