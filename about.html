@@ -5,9 +5,126 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>About — Cedric Reyes</title>
+    <title>About — Cedric Andrei Reyes</title>
 
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* =========================================
+           ABOUT PAGE — CENTERED PROFILE
+        ========================================= */
+
+        .inner-page {
+            padding-top: 150px;
+        }
+
+        .profile {
+            width: 100%;
+        }
+
+        .profile-card {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* CENTER PORTRAIT */
+        .intergalactic-portrait {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* PROFILE INFORMATION */
+        .profile-info {
+            width: 100%;
+            max-width: 1050px;
+            margin: 60px auto 0;
+            text-align: center;
+        }
+
+        .profile-info .section-kicker {
+            text-align: center;
+        }
+
+        .profile-info h2 {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .profile-info h2 span {
+            display: block;
+        }
+
+        /* PERSONAL DETAILS */
+        .profile-details {
+            width: 100%;
+            max-width: 950px;
+            margin: 45px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 18px 30px;
+
+            text-align: left;
+        }
+
+        .profile-detail {
+            width: 100%;
+        }
+
+        /* PAGE HERO CENTER */
+        .page-hero {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .page-hero .section-kicker,
+        .page-hero p {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* MOBILE */
+        @media (max-width: 700px) {
+
+            .inner-page {
+                padding-top: 125px;
+            }
+
+            .profile-card {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .profile-info {
+                margin-top: 45px;
+            }
+
+            .profile-details {
+                grid-template-columns: 1fr;
+                gap: 14px;
+                text-align: left;
+            }
+
+            .profile-detail {
+                text-align: left;
+            }
+
+            .page-hero {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -29,13 +146,14 @@
         <a class="brand" href="index.html">
             <img
                 src="assets/header-logo.png"
-                alt="Cedric Reyes"
+                alt="Cedric Andrei Reyes"
             >
         </a>
 
         <button
             class="menu-toggle"
             aria-label="Open menu"
+            aria-expanded="false"
         >
             <span></span>
             <span></span>
@@ -96,7 +214,7 @@
             </h1>
 
             <p>
-                A personal profile of Cedric Reyes —
+                A personal profile of Cedric Andrei Reyes —
                 his interests, favorite things, hobbies,
                 and creative journey.
             </p>
@@ -120,30 +238,26 @@
 
                 <div class="intergalactic-portrait">
 
-                    <!-- Glow behind portrait -->
                     <div class="portrait-glow"></div>
 
-
-                    <!-- Rotating frame -->
                     <div class="portrait-ring ring-main"></div>
 
                     <div class="portrait-ring ring-inner"></div>
 
 
-                    <!-- Cedric portrait -->
+                    <!-- CEDRIC PORTRAIT -->
+
                     <div class="portrait-image">
 
                         <img
                             src="assets/CEDRIC_MAIN.png"
-                            alt="Cedric Reyes"
+                            alt="Cedric Andrei Reyes"
                         >
 
                     </div>
 
 
-                    <!-- =========================
-                         ORBIT 1
-                    ========================== -->
+                    <!-- ORBIT 1 -->
 
                     <div class="orbit orbit-1">
 
@@ -152,9 +266,7 @@
                     </div>
 
 
-                    <!-- =========================
-                         ORBIT 2
-                    ========================== -->
+                    <!-- ORBIT 2 -->
 
                     <div class="orbit orbit-2">
 
@@ -163,9 +275,7 @@
                     </div>
 
 
-                    <!-- =========================
-                         ORBIT 3
-                    ========================== -->
+                    <!-- ORBIT 3 -->
 
                     <div class="orbit orbit-3">
 
@@ -174,9 +284,7 @@
                     </div>
 
 
-                    <!-- =========================
-                         ORBIT 4
-                    ========================== -->
+                    <!-- ORBIT 4 -->
 
                     <div class="orbit orbit-4">
 
@@ -200,8 +308,9 @@
 
 
                     <h2>
-                        CEDRIC<br>
-                        <span>REYES</span>
+                        CEDRIC
+                        <br>
+                        <span>ANDREI REYES</span>
                     </h2>
 
 
@@ -757,7 +866,7 @@
         <img
             class="footer-logo"
             src="assets/footer-logo.png"
-            alt="Cedric Reyes"
+            alt="Cedric Andrei Reyes"
         >
 
         <p>
@@ -791,7 +900,7 @@
 
 
         <small>
-            © 2026 CEDRIC REYES | ALL RIGHTS RESERVED
+            © 2026 CEDRIC ANDREI REYES | ALL RIGHTS RESERVED
         </small>
 
     </footer>
